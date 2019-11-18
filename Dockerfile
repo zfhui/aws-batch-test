@@ -16,4 +16,4 @@ USER the-transformer
 WORKDIR /tmp/ffmpeg
 COPY --chown=the-transformer sample.m4a /tmp/ffmpeg/
 
-CMD ["echo", "Hello World!"]
+ENTRYPOINT ["ffmpeg", "-version"]
